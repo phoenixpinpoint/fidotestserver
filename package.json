@@ -1,0 +1,14 @@
+{
+  "name": "fido_testserver",
+  "version": "1.0.0",
+  "description": "Test endpoints for fido",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam C. Guthrie",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
