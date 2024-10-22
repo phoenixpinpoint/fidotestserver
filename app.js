@@ -29,6 +29,12 @@ server.patch('/:id', (req,res) => {
 	
 })
 
+server.delete('/:id', (req,res) => {
+	console.log("DELETE /:id Response");
+	res.send(req.params.id);
+	
+})
+
 server.listen(port, () => {
 	console.log("Testing Server Started")
 })
