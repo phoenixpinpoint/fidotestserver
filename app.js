@@ -15,13 +15,18 @@ server.post('/simple', (req,res) => {
 
 server.post('/complex', (req,res) => {
 	console.log("POST /complex Response");
-	console.log(req.body);
 	if(req.body && req.body.name == "John") {
 		res.send("Complex Post");
 	}
 	else {
 		res.status(400).send("Bad Request");
 	}
+})
+
+server.patch('/:id', (req,res) => {
+	console.log("PATCH /:id Response");
+	res.send(req.params.id);
+	
 })
 
 server.listen(port, () => {
